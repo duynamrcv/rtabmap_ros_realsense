@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/may8/catkin_ws/devel/include",
+                "/home/may8/camera_ws/devel/include",
+                "/opt/ros/kinetic/include",
+                "/home/may8/catkin_ws/src/octomap_rviz_plugins/include",
+                "/home/may8/catkin_ws/src/octomap_mapping/octomap_server/include",
+                "/home/may8/catkin_ws/src/rtabmap_ros/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
