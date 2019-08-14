@@ -27,7 +27,7 @@ $ catkin_make
 ```
 1.2. Build from source for NVIDIA Jetson <br>
 ## 2. Mapping and Localization
-2.1. Connect RenSense D435 Camera 
+2.1. Connect RenSense D435 Camera  <br>
 * RGB-D handheld mapping
 ```
 $ roslaunch realsense2_camera rs_aligned_depth.launch
@@ -36,11 +36,11 @@ $ roslaunch realsense2_camera rs_aligned_depth.launch
 ```
 $ roslaucnh realsense2_camera rs_from_file.launch aligned_depth:=true rosbag_filename:=path/to/bag/file.bag
 ```
-2.2. Mapping
+2.2. Mapping <br>
 ```
 $ roslaunch rtabmap_ros_realsense realsense_mapping.launch
 ```
-2.3. Localization
+2.3. Localization <br>
 After mapping, we have database in ~/catkin_ws/src/data/rtabmap.db (default)
 ```
 $ roslaunch rtabmap_ros_realsense realsense_localization.launch
