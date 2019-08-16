@@ -190,6 +190,8 @@
           <param name="guess_min_rotation"          type="double" value="$(arg odom_guess_min_rotation)"/>
 
           <param name="Reg/Force3DoF"               type="bool"   value="true" />
+          <param name="Odom/ResetCountdown"         type="int"    value="1" />
+
         </node>
 
         <!-- Stereo Odometry -->
@@ -273,8 +275,16 @@
       <param name="cloud_noise_filtering_radius"        type="string" value="0.05"/>
       <param name="cloud_noise_filtering_min_neighbors" type="string" value="2"/> 
 
-      <param name="Reg/Force3DoF"        type="bool"  value="true" />
-      <param name="Optimizer/Slam2D"     type="bool"  value="true" />
+      <param name="Reg/Force3DoF"         type="bool"   value="true" />
+      <param name="Optimizer/Slam2D"      type="bool"   value="true" />
+
+      <param name="Odom/Strategy"         type="int"    value="1"/>
+      <param name="Vis/CorType"           type="int"    value="1"/>
+
+      <param name="OdomF2M/MaxSize"       type="string" value="1000"/>
+      <param name="Vis/MaxFeatures"       type="string" value="600"/>
+
+      <param name="Rtabmap/StartNewMapOnLoopClosure" type="bool" value="true"/> 
       
       <remap from="rgb/image"       to="$(arg rgb_topic_relay)"/>
       <remap from="depth/image"     to="$(arg depth_topic_relay)"/>
